@@ -52,6 +52,10 @@ hr {
   color: black;
 }
 
+.title {
+  text-align: center;
+}
+
 .gist {
   overflow: hidden;
   width: 100%;
