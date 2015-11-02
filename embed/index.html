@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Demo: embedding blabs</title>
+  <title>Embedding blabs</title>
   <style>
   body {
     width: 1000px;
@@ -26,24 +26,91 @@
   li {
     margin-bottom: 10px;
   }
+  .clear {
+  clear:both;
+  }
   </style>
 </head>
 <body>
-  <h1>Embed demo</h1>
+
+  <h1>Embedding blabs</h1>
   
+  <div>
+    <p> <a href="http://blarb.io">Blabr</a> is "Scientific computing
+      for the web". This page shows how to embed content from Blabr in
+      your own site, and is served (statically) from GitHub.</p>
+
+    <p>Presently there are two options: (a) embed a single layout box;
+      or (b), embed a complete blab.</p>
+  </div>
+
+  <h2>Embed a single layout box</h2>
+
   <div class="left">
-  <h2>Design a second order PLL loop filter</h2>
-  <ul>
-    <li>Passive, second-order loop filter design for charge-pump PLLs.
-      (See <a href="http://sss-mag.com/pdf/pllfil.pdf" target="_blank">[pdf]</a> for design details.)
-    <li>Sliders control phase-margin and unity-gain bandwidth.
-    <li><a href="//blabr.io/?4511714609474df6cfa4" target="_blank">View source code</a>
-  </ul>
+
+    <ul>
+      <li>
+	Consider the <a href="//blabr.io/?4511714609474df6cfa4"
+	target="_blank">Design a second order PLL loopfilter</a> blab.
+      </li>
+      <li>
+	The content we want to embed is in a single layout box
+	(No. 2) on the right-hand side.
+      </li>
+      <li> 
+	The required HTML is:<p>
+	  <code>&lt;iframe class="noborder" width=100% height=500
+	    src="//blabr.io/?4511714609474df6cfa4&amp;pos=2"
+	    scrolling="no"&gt;&lt;/iframe&gt;</code></p>
+      </li>
+      <li>
+	Note that blabr.io/?4511714609474df6cfa4 is the blab's URL
+	and 'pos=2' selects the second layout box.
+      </li>
+      <li>
+	Change the sliders to check the behaviour is the same as the
+	source blab.
+      </li>
+    </ul>
   </div>
   
   <div class="right">
-  <iframe class="noborder" width=100% height=500 src="//blabr.io/?4511714609474df6cfa4&bare=1&pos=2" scrolling="no"></iframe>
+    <iframe class="noborder" width=100% height=500
+    src="//blabr.io/?4511714609474df6cfa4&pos=2"
+    scrolling="no"></iframe>
   </div>
+
+  <div class="clear"/>
+
+  <br>
+
+  <h2>Embed a complete blab</h2>
+
+  <div class="left">
+    <ul>
+      <li>
+	Consider now the <a href="//blabr.io/?3964da2fb54cf9415555"
+	target="_blank">Attractor solutions in scalar-field cosmology</a> blab.
+      </li>
+      <li>
+	Note that 'bare=1' hides the blabs menu items (editing etc.).
+      </li>
+    </ul>
+  </div>
+
+  <div class="right">
+    <ul>
+      <li> 
+	The required HTML is:<p>
+	  <code>
+	    &lt;iframe width=1070 height=735
+	    src="//blabr.io/?3964da2fb54cf9415555&amp;bare=1"&gt;&lt;/iframe&gt;
+	</code></p>
+      </li>
+    </ul>
+  </div>
+ 
+  <iframe width=1070 height=560 src="//blabr.io/?3964da2fb54cf9415555&bare=1"></iframe>
   
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     
