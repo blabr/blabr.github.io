@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+ <title>Blabr - Scientific computing for the web</title>
+ <description>A blog of blabs.</description>
+ <link>http://blabr.org</link>
+ 
+ <item>
+  <title>Basic Properties of Mars as a Planetary Body</title>
+  <link>http://blabr.io/?3df6e2368e89a8c3f780</link>
+  <description></description>
+ </item>
+
+</channel>
+</rss>
