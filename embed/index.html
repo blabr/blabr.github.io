@@ -1,19 +1,15 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <title>Embedding blabs</title>
   <style>
-  body {
+  .container {
     width: 1000px;
     margin: 0 auto;
     margin-bottom: 40px;
-  }
-  iframe {
-    border: 2px dotted #aaa;
-  }
-  iframe.noborder {
-    border: none;
+    font-family: Verdana, 'DejaVu Sans', sans-serif;
+    font-size: 12pt;
+    line-height: 150%;
   }
   .left {
     float: left;
@@ -23,109 +19,116 @@
      float: right;
      width: 525px;
   }
+  .clear {
+    clear:both;
+  }
   li {
     margin-bottom: 10px;
   }
-  .clear {
-  clear:both;
+  code {
+    font-weight: bold;
   }
   </style>
 </head>
 <body>
-
+  
+  <div class="container">
+  
   <p><span style="display:none">claimtoken-563d52464f531</span></p>
-
+  
   <h1>Embedding scientific computation in your site</h1>
   
   <div>
-    <p> <a href="http://blabr.io">Blabr</a> &mdash; "Scientific
+    <p>
+      <a href="http://blabr.io" target="_blank">Blabr</a> &mdash; "Scientific
       computing for the web" &mdash; is a tool for creating
       interactive tables, plots, sliders, code, etc. in the browser as
       a <i>blab</i> (web lab). This page shows how to embed a blab in
-      your own site.</p>
-
-    <p>Presently there are two options: (a) embed a
-      single <a href="http://blabr.io/?c7837da7dd136710e2ba">layout
-      box</a>; or (b), embed a complete blab.</p>
+      your own site.
+    </p>
+      
+    <p>
+      Presently there are two options: (a) embed a
+      single <a href="http://blabr.io?c7837da7dd136710e2ba" target="_blank">layout
+      box</a>; or (b), embed a complete blab.
+    </p>
   </div>
-
+  
   <br>
-
+  
   <h2>Embed a single layout box</h2>
-
+  
   <div class="left">
-
-
     <ul>
       <li>
-	Consider the <a href="//blabr.io/?4511714609474df6cfa4"
-	target="_blank">Design a second order PLL loopfilter</a> blab.
+        Consider the <a href="//blabr.io?4511714609474df6cfa4"
+        target="_blank">Design a second order PLL loopfilter</a> blab.
       </li>
       <li>
-	The content we want to embed is in a single layout box
-	(No. 2) on the right-hand side of the blab.
+        The content we want to embed is in a single layout box
+        (No. 2) on the right-hand side of the blab.
       </li>
       <li> 
-	To embed this content here (as shown on the right), include:<p>
-	  <code>&lt;iframe class="noborder" width=100% height=500
-	    src="//blabr.io/?4511714609474df6cfa4&amp;pos=2&amp;logo=0"
-	    scrolling="no"&gt;&lt;/iframe&gt;</code></p>
+        To embed this content here (as shown on the right), include:
+          <p>
+            <code>&lt;iframe width=100% height=500
+              src="//blabr.io?4511714609474df6cfa4&amp;pos=2"
+              scrolling="no" style="border: none;"&gt;&lt;/iframe&gt;
+            </code>
+          </p>
       </li>
       <li>
-	Note that: blabr.io/?4511714609474df6cfa4 is the blab's URL;
-	'pos=2' selects the second layout box; 'logo=0' hides the
-	logo.
+        Note that <code>blabr.io?4511714609474df6cfa4</code> is the blab's URL; and
+        <code>pos=2</code> selects the second layout box.
       </li>
       <li>
-	Change the sliders to check the behaviour is the same as the
-	source blab.
+        Change the sliders to check the behaviour is the same as the
+        source blab.
       </li>
     </ul>
   </div>
   
   <div class="right">
-    <iframe class="noborder" width=100% height=550
-    src="//blabr.io/?4511714609474df6cfa4&pos=2&logo=0"
-    scrolling="no"></iframe>
+    <iframe width=100% height=550
+    src="//blabr.io?4511714609474df6cfa4&pos=2"
+    scrolling="no" style="border: none;"></iframe>
   </div>
-
+  
   <div class="clear"/>
-
-
+  
   <h2>Embed a complete blab</h2>
-
+  
   <div class="left">
     <ul>
       <li>
-	Consider now the <a href="//blabr.io/?3964da2fb54cf9415555"
-	target="_blank">Attractor solutions in scalar-field cosmology</a> blab.
-      </li>
-      <li>
-	Note that 'bare=1' hides the blabs menu items (editing etc.).
+        Consider now the <a href="//blabr.io?3964da2fb54cf9415555"
+        target="_blank">Attractor solutions in scalar-field cosmology</a> blab.
       </li>
     </ul>
   </div>
-
+  
   <div class="right">
     <ul>
       <li> 
-	The required HTML is:<p>
-	  <code>
-	    &lt;iframe width=1070 height=560
-	    src="//blabr.io/?3964da2fb54cf9415555&amp;bare=1"&gt;&lt;/iframe&gt;
-	</code></p>
+        The required HTML is:
+        <p>
+          <code>
+            &lt;iframe width=1070 height=560
+            src="//blabr.io?3964da2fb54cf9415555"
+            style="border: 2px dotted gray;"&gt;&lt;/iframe&gt;
+          </code>
+        </p>
       </li>
     </ul>
   </div>
-
+  
   <div class="clear"/>
-
+  
   <br>
-  <br>
-
-  <iframe width=1070 height=560 src="//blabr.io/?3964da2fb54cf9415555&bare=1"></iframe>
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    
+  
+  <iframe width=1070 height=560 src="//blabr.io?3964da2fb54cf9415555" style="border: 2px dotted gray;"></iframe>
+  
+  </div>
+  
 </body>
 </html>
