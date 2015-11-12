@@ -1,2 +1,2 @@
 # blabr.github.io
-blabr.org home page
+blabr.github.io home page
